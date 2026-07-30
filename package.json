@@ -22,13 +22,13 @@
   },
   "dependencies": {
     "@azure/msal-node": "^5.4.0",
-    "archiver": "^7.0.1",
+    "archiver": "^8.0.0",
     "dotenv": "^16.4.5",
     "puppeteer": "^23.8.0",
     "xlsx-js-style": "^1.2.0"
   },
   "devDependencies": {
-    "@types/archiver": "^6.0.3",
+    "@types/archiver": "^8.0.0",
     "@types/node": "^22.10.1",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2"

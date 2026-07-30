@@ -1,11 +1,11 @@
 import { createWriteStream, statSync, readdirSync } from 'fs';
 import { join, relative } from 'path';
-import archiver from 'archiver';
+import { ZipArchive } from 'archiver';
 
 export async function zipDirectory(sourceDir: string, outputPath: string): Promise<void> {
   await new Promise<void>((resolveDone, reject) => {
     const output = createWriteStream(outputPath);
-    const archive = archiver('zip', { zlib: { level: 9 } });
+    const archive = new ZipArchive({ zlib: { level: 9 } });
     output.on('close', () => resolveDone());
     archive.on('error', reject);
     archive.pipe(output);
