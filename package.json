@@ -1,0 +1,36 @@
+{
+  "name": "decode-email-rfq-triage",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo: receive a circuit board design package by email, run it through the Boardera Decode API, and reply with an Executive Summary PDF, BOM Excel, and DFM report.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/boardera/decode-email-rfq-triage.git"
+  },
+  "homepage": "https://github.com/boardera/decode-email-rfq-triage#readme",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "auth": "tsx src/index.ts auth",
+    "run-once": "tsx src/index.ts run-once",
+    "start": "tsx src/index.ts start",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@azure/msal-node": "^5.4.0",
+    "archiver": "^7.0.1",
+    "dotenv": "^16.4.5",
+    "puppeteer": "^23.8.0",
+    "xlsx-js-style": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/archiver": "^6.0.3",
+    "@types/node": "^22.10.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
