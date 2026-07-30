@@ -1,4 +1,4 @@
-# Boardera Decode API — MS_EmailRFQTriage Demo
+# Boardera Decode API — Email RFQ Triage
 
 Email-driven RFQ triage, powered by the [Boardera Decode API](https://boardera.io).
 
