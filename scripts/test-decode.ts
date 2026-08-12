@@ -6,7 +6,7 @@ import { gql } from '../src/decode/client.js';
 import { config } from '../src/config.js';
 
 console.log(`Endpoint: ${config.decode.endpoint}`);
-console.log(`Key:      ${config.decode.apiKey.slice(0, 8)}…`);
+console.log(`Key:      ${config.decode.apiKey ? '(set)' : '(missing)'}`);
 
 try {
   const result = await gql<any>('{ __typename }');
