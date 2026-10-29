@@ -207,7 +207,7 @@ export async function generateDfmPdf(input: DfmPdfInput): Promise<string> {
   try {
     const page = await browser.newPage();
     await page.emulateMediaType('print');
-    await page.setContent(html, { waitUntil: 'networkidle0' });
+    await page.setContent(html, { waitUntil: 'load' });
     await page.pdf({
       path: outPath,
       format: 'A4',
