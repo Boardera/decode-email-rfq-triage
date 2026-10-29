@@ -21,7 +21,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@azure/msal-node": "^5.4.0",
+    "@azure/msal-node": "^7.1.0",
     "archiver": "^8.0.0",
     "dotenv": "^16.4.5",
     "puppeteer": "^23.8.0",
